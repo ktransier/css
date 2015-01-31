@@ -15,3 +15,9 @@
 4. Draw polygon intersecting all feature to be merged and right click to select.
 5. In the Advanced Digitizing toolbar select Merge Feature.
 6. Toggle off editing and save to complete merge.
+
+#### Zoom to point
+
+1. Go to Plugins -> Manage and Install Plugins
+2. Search for and install Zoom to Point
+3. Click on Zoom to Point in toolbar
