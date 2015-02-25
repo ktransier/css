@@ -92,4 +92,4 @@ $batman = "Batman" #global variable
 _batman = "Batman" #local variable for within methods
 ```
 
-```
+#### [::](http://stackoverflow.com/a/3009565/4233556)
