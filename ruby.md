@@ -41,3 +41,18 @@ s.each_char {|x| print "#{x} " }
 ```ruby
 words = %w[this is a test]
 ```
+
+#### Convert range to array
+```ruby
+a = ('a'..'e').to_a
+```
+
+#### Obtain the first three elements of the array
+```ruby
+a[0..2]
+```
+
+#### Substitute subarray
+```ruby
+a[0..2] = a[1..3]
+```
