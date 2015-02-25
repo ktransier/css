@@ -56,3 +56,8 @@ a[0..2]
 ```ruby
 a[0..2] = a[1..3]
 ```
+
+#### Subtract elements from an array
+```ruby
+['a', 'b', 'c', 'b', 'a'] - ['b', 'c', 'd']
+```
