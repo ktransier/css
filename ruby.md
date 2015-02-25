@@ -71,9 +71,13 @@ cold_war.includes? 1962
 
 #### Determine class
 ```ruby
-
 b = "Batman"
 b.class
 b.class.superclass
 b.instance_of? String
 ```
+#### Append to array
+```ruby
+a = (1..5).to_a
+a.push(6)
+a << 6
