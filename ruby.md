@@ -29,3 +29,9 @@ end
 
 h = {one: 1, two: 2}
 h[:one]
+
+#### Iteration through string
+
+```ruby
+s.each_char {|x| print "#{x} " }
+```
