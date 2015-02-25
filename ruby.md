@@ -18,3 +18,14 @@ end
 ```
 
 #### [!](http://stackoverflow.com/a/612653/4233556)
+
+#### Iterator method
+```ruby
+3.times { print "Ruby!" }
+1.upto(9) { |x| print x }
+```
+
+#### Basic Hash
+
+h = {one: 1, two: 2}
+h[:one]
