@@ -81,3 +81,15 @@ b.instance_of? String
 a = (1..5).to_a
 a.push(6)
 a << 6
+```
+
+#### 4 types of variables and constant
+```ruby
+BATMAN = "Batman" #constant
+$batman = "Batman" #global variable
+@@batman = "Batman" #class variable
+@batman = "Batman" #instance variable
+_batman = "Batman" #local variable for within methods
+```
+
+```
