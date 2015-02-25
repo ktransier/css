@@ -68,3 +68,12 @@ a[0..2] = a[1..3]
 cold_war = 1945..1989
 cold_war.includes? 1962
 ```
+
+#### Determine class
+```ruby
+
+b = "Batman"
+b.class
+b.class.superclass
+b.instance_of? String
+```
