@@ -61,3 +61,10 @@ a[0..2] = a[1..3]
 ```ruby
 ['a', 'b', 'c', 'b', 'a'] - ['b', 'c', 'd']
 ```
+
+#### Include for ranges and arrays
+
+```ruby
+cold_war = 1945..1989
+cold_war.includes? 1962
+```
