@@ -35,3 +35,9 @@ h[:one]
 ```ruby
 s.each_char {|x| print "#{x} " }
 ```
+
+#### Alternate array literal syntax for strings
+
+```ruby
+words = %w[this is a test]
+```
