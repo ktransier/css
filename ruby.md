@@ -93,3 +93,5 @@ _batman = "Batman" #local variable for within methods
 ```
 
 #### [::](http://stackoverflow.com/a/3009565/4233556)
+
+#### [Virtual Attribute](http://stackoverflow.com/a/5399010/4233556)
