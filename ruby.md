@@ -113,3 +113,8 @@ x ^= y  # x = x ^ y
 x <<= y # x = x << y
 x >>= y # x = x >> y 
 ```
+
+#### Ternary operator
+```ruby
+val = a ? b : c
+```
