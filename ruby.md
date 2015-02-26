@@ -163,3 +163,9 @@ end
 # (1.00, 0.00) (0.00, 1.00) (-1.00, 0.00) (-0.00, -1.00) 
 circle(1,4) {|x,y| printf "(%.2f, %.2f) ", x, y }
 ```
+
+#### Each with pair
+
+```ruby
+{:one=>1}.each_pair {|key,value| ... }
+```
