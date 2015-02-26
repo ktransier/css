@@ -118,3 +118,19 @@ x >>= y # x = x >> y
 ```ruby
 val = a ? b : c
 ```
+
+#### Loops
+
+```ruby
+for x in array do
+  code
+end
+
+while x == true do
+ code
+end
+
+until x == true do
+  code
+end
+```
