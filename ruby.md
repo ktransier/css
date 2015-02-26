@@ -139,3 +139,11 @@ until x == true do
   code
 end
 ```
+
+#### Collect (map), select, reject, and inject
+```ruby
+squares = [1,2,3].collect { |x| x * x } # => [1, 4, 9]
+evens = (1..10).select { |x| x % 2 == 0 } # => [2,4,6,8,10]
+odds = (1..10).reject { |x| x % 2 == 0 } # => [1,3,5,7,9] 
+sum = [2, 5, 3, 4].inject {|sum, x| sum + x } # => 14
+```
