@@ -126,6 +126,11 @@ for x in array do
   code
 end
 
+hash = {:a=>1, :b=>2, :c=>3}
+for key,value in hash
+  puts "#{key} => #{value}" 
+end
+
 while x == true do
  code
 end
