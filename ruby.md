@@ -147,3 +147,19 @@ evens = (1..10).select { |x| x % 2 == 0 } # => [2,4,6,8,10]
 odds = (1..10).reject { |x| x % 2 == 0 } # => [1,3,5,7,9] 
 sum = [2, 5, 3, 4].inject {|sum, x| sum + x } # => 14
 ```
+
+#### Yield
+
+```ruby
+# Generate n points evenly spaced around the circumference of a
+# circle of radius r centered at (0,0). Yield the x and y coordinates # of each point to the associated block.
+def circle(r,n)
+  n.times do |i| 
+    # Notice that this method is implemented with a block angle = Math::PI * 2 * i / n
+    yield r*Math.cos(angle), r*Math.sin(angle)
+  end 
+end
+# This invocation of the iterator prints:
+# (1.00, 0.00) (0.00, 1.00) (-1.00, 0.00) (-0.00, -1.00) 
+circle(1,4) {|x,y| printf "(%.2f, %.2f) ", x, y }
+```
