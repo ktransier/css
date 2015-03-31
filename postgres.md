@@ -10,14 +10,14 @@ ALTER USER root WITH SUPERUSER;
 
 EXPLAIN ANALYZE SELECT company_id FROM job_listings WHERE company_id = 145;
 
-**Log in to specific db **
+**Log in to specific db**
 
 psql myapp_development
 
-** Quit psql **
+**Quit psql**
 
 \q
 
-** Create database **
+**Create database**
 
 CREATE DATABASE myapp_development;
