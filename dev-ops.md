@@ -157,6 +157,12 @@ task :deploy => :environment do
 end
 ```
 
+#### Backup all postgres files to local machine
+```
+SHOW data_directory; (in psql)
+ scp -r root@107.170.218.101:/var/lib/postgresql ~/dropbox/code/retrograde
+```
+
 #### Reading 
 + [How To Deploy Rails Apps Using Unicorn And Nginx on CentOS 6.5](https://www.digitalocean.com/community/tutorials/how-to-deploy-rails-apps-using-unicorn-and-nginx-on-centos-6-5)
 + [Understanding DigitalOcean Droplet Backups](https://www.digitalocean.com/community/tutorials/understanding-digitalocean-droplet-backups)
