@@ -1,3 +1,35 @@
+#### Initial setup of remote server on Ubuntu for Rails/Postgres/Nginx deployed with Mina
+
++ ssh root@[your.ip.address.here]
++ sudo apt-get update
++ sudo apt-get install curl git-core build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libcurl4-openssl-dev libxml2-dev libxslt1-dev nodejs imagemagick redis-server htop
++ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
++ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
++ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
++ rbenv install 2.1.4
++ rbenv global 2.1.4
++ gem install bundler
++ sudo apt-get install postgresql postgresql-contrib
++ (Log into user Postgres, automatically created) sudo -i -u postgres
++ psql
++ (In psql) CREATE DATABASE yourapp_production;
++ (Set password in Postgres user in psql) \password
++ sudo apt-get install nginx
++ (start nginx) sudo service nginx start 
++ (Check to see if nginx is running) ps ax | grep nginx
++ nano /etc/nginx/nginx.conf (Leave as standard configuration)
++ nano /etc/nginx/sites-enabled/default (Change file to nginix-default )
++ nano /home/deployer/YOUR_APP/shared/config/database.yml (Change database.yml to production settings)
++ nano /home/deployer/YOUR_APP/shared/config/secrets.yml (Copy production)
++ mina deploy
++ Visit [your.ip.address.here]:8080
++ (Add SSH key to server) ssh-add ~/.ssh/id_rsa 
++ (Show SSH key) cat /root/.ssh/id_rsa.pub
++ Add SSH key to Github to enable Mina to clone Github repo to DO repo
++ RAILS_ENV=production bundle exec rails c (rails console on remote server)
++ cd /home/deployer/quickdraw/current (directory that app is located)
+
+
 #### Sync local Postgres database with Digital Ocean droplet
 
 ```bash
@@ -123,39 +155,6 @@ task :deploy => :environment do
     end
   end
 end
-```
-
-#### Initial setup of remote server on Ubuntu for Rails/Postgres/Nginx deployed with Mina
-
-```
-+ ssh root@[your.ip.address.here]
-+ sudo apt-get update
-+ sudo apt-get install curl git-core build-essential zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libcurl4-openssl-dev libxml2-dev libxslt1-dev nodejs imagemagick redis-server htop
-+ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-+ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-+ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-+ rbenv install 2.1.4
-+ rbenv global 2.1.4
-+ gem install bundler
-+ sudo apt-get install postgresql postgresql-contrib
-+ (Log into user Postgres, automatically created) sudo -i -u postgres
-+ psql
-+ (In psql) CREATE DATABASE yourapp_production;
-+ (Set password in Postgres user in psql) \password
-+ sudo apt-get install nginx
-+ (start nginx) sudo service nginx start 
-+ (Check to see if nginx is running) ps ax | grep nginx
-+ nano /etc/nginx/nginx.conf (Leave as standard configuration)
-+ nano /etc/nginx/sites-enabled/default (Change file to nginix-default )
-+ nano /home/deployer/YOUR_APP/shared/config/database.yml (Change database.yml to production settings)
-+ nano /home/deployer/YOUR_APP/shared/config/secrets.yml (Copy production)
-+ mina deploy
-+ Visit [your.ip.address.here]:8080
-+ (Add SSH key to server) ssh-add ~/.ssh/id_rsa 
-+ (Show SSH key) cat /root/.ssh/id_rsa.pub
-+ Add SSH key to Github to enable Mina to clone Github repo to DO repo
-+ RAILS_ENV=production bundle exec rails c (rails console on remote server)
-+ cd /home/deployer/quickdraw/current (directory that app is located)
 ```
 
 #### Reading 
