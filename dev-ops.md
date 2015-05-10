@@ -124,3 +124,16 @@ task :deploy => :environment do
   end
 end
 ```
+
+#### Reading 
++ [How To Deploy Rails Apps Using Unicorn And Nginx on CentOS 6.5](https://www.digitalocean.com/community/tutorials/how-to-deploy-rails-apps-using-unicorn-and-nginx-on-centos-6-5)
++ [Understanding DigitalOcean Droplet Backups](https://www.digitalocean.com/community/tutorials/understanding-digitalocean-droplet-backups)
++ [How To Use SSH Keys with DigitalOcean Droplets](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-keys-with-digitalocean-droplets)
++ [Rbenv installation](https://github.com/sstephenson/rbenv#table-of-contents)
++ [Ruby Build](https://github.com/sstephenson/ruby-build#readme)
++ [How To Install and Use PostgreSQL on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04)
++ [Digital Ocean: Ubuntu, Nginx, Unicorn, Rails](http://blog.mccartie.com/2014/08/28/digital-ocean.html)
++ [Adding swap](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
++ [Scaling Ruby on Rails: Setting Up A Dedicated PostgreSQL Server (Part 3)](https://www.digitalocean.com/community/tutorials/scaling-ruby-on-rails-setting-up-a-dedicated-postgresql-server-part-3)
++ [How To Add Swap on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
++ [How To Set Up Master Slave Replication on PostgreSQL on an Ubuntu 12.04 VPS](https://www.digitalocean.com/community/tutorials/how-to-set-up-master-slave-replication-on-postgresql-on-an-ubuntu-12-04-vps)
