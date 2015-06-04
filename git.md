@@ -1,5 +1,5 @@
 ### Rename branch
 
-```shell
+```bash
 git branch -m kt-example-bug-fix kt-awesome-bug-fix    
 ```
