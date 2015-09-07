@@ -21,3 +21,7 @@ psql myapp_development
 **Create database**
 
 CREATE DATABASE myapp_development;
+
+**Drop specific table**
+
+DROP TABLE slot;
