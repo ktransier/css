@@ -25,3 +25,14 @@ CREATE DATABASE myapp_development;
 **Drop specific table**
 
 DROP TABLE slot;
+
+** List databases **
+psql
+\l
+
+** List tables in database **
+psql myapp_development
+\dt
+
+** Drop specific columns within table **
+ALTER TABLE table DROP COLUMN col1, DROP COLUMN col2;
