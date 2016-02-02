@@ -36,3 +36,10 @@ psql myapp_development
 
 ** Drop specific columns within table **
 ALTER TABLE table DROP COLUMN col1, DROP COLUMN col2;
+
+** List columns within table **
+psql myapp_development
+ \d+ myapp_development_table_name
+ 
+ ** Import database **
+ psql myapp_development < database.pgdump
