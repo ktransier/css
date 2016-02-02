@@ -40,35 +40,40 @@ CREATE DATABASE myapp_development;
 DROP TABLE slot;
 ```
 
-** List databases **
+**List databases**
 
 ```sql
 psql
 \l
 ```
 
-** List tables in database **
+**List tables in database**
 
 ```sql
 psql myapp_development
 \dt
 ```
 
-** Drop specific columns within table **
+**Drop specific columns within table**
 
 ```sql
 ALTER TABLE table DROP COLUMN col1, DROP COLUMN col2;
 ```
 
-** List columns within table **
+**List columns within table**
 
 ```sql
 psql myapp_development
  \d+ myapp_development_table_name
  ```
  
- ** Import database **
+ **Import database**
  
  ```sql
  psql myapp_development < database.pgdump
  ```
+ 
+ **Rename database**
+ ```sql
+ ALTER DATABASE events RENAME TO dev_database;
+```
