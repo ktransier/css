@@ -1,6 +1,8 @@
 **Show roles**
 
+```sql
 SELECT rolname, rolsuper FROM pg_roles;
+```
 
 **Make role a superuser**
 
