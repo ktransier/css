@@ -168,6 +168,11 @@ SHOW data_directory; (in psql)
 ssh-keygen -R IP_ADDRESS
 ```
 
+### Sort folders by space
+```
+du --max-depth=7 ./ | sort -n
+```
+
 #### Reading 
 + [How To Deploy Rails Apps Using Unicorn And Nginx on CentOS 6.5](https://www.digitalocean.com/community/tutorials/how-to-deploy-rails-apps-using-unicorn-and-nginx-on-centos-6-5)
 + [Understanding DigitalOcean Droplet Backups](https://www.digitalocean.com/community/tutorials/understanding-digitalocean-droplet-backups)
