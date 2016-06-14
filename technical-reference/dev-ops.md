@@ -1,3 +1,5 @@
+### Dev-Ops
+
 #### Initial setup of remote server on Ubuntu for Rails/Postgres/Nginx deployed with Mina
 
 + ssh root@[your.ip.address.here]

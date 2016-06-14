@@ -1,10 +1,3 @@
-#### Kill server
-
-```
-lsof -wni tcp:3000
-kill -9 PID
-```
-
 #### [Continue a loop after catching an exception](http://stackoverflow.com/a/4154966/4233556)
 ```ruby
 for i in 1..5

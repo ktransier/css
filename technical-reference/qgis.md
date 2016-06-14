@@ -1,4 +1,4 @@
-### qgis
+### Quantum GIS
 
 #### Split a feature [+](http://gis.stackexchange.com/questions/46862/how-to-split-features-in-qgis)
 1. Select View -> Toolbars and toggle Advanced Digitizing.

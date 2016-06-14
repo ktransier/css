@@ -1,4 +1,4 @@
-### css
+### CSS
 
 #### In a parent div containing two floating child divs, match the parents height to the tallest child div
 
