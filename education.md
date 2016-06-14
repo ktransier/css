@@ -1,5 +1,7 @@
 #### Education
 
+#### Completed coursework
+
 ##### UW
 B.A. in Political Science (focus: International Security), class of 2015
 
@@ -33,6 +35,9 @@ B.A. in Political Science (focus: International Security), class of 2015
 ##### Khan Academy
 * [Intro to SQL: Querying and Managing Data](https://www.khanacademy.org/computing/computer-programming/sql)
 
-###### Coursera
+#### Coursework to be completed
 
-###### Udacity
+Udacity
+* [Introduction to Parallel Programming](https://www.udacity.com/course/intro-to-parallel-programming--cs344)
+* [Introduction to Machine Learning](https://www.udacity.com/course/intro-to-machine-learning--ud120)
+
