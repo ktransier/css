@@ -60,3 +60,12 @@ JOIN
 ORDER BY SCHEMA,
         "Table";
 ```
+
+```sql
+View distribution
+SELECT locati on_id, COUNT(*) 
+FROM itemizations
+GROUP BY 1 
+ORDER BY 2 DESC 
+LIMIT 100;
+```
